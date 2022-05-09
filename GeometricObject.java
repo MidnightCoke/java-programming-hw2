@@ -1,14 +1,11 @@
 public abstract class GeometricObject {
 	private String color = "while";
 	private boolean filled;
-	private java.util.Date dateCreated;
 
 	protected GeometricObject() {
-		dateCreated = new java.util.Date();
 	}
 
 	protected GeometricObject(String color, boolean filled) {
-		dateCreated = new java.util.Date();
 		this.color = color;
 		this.filled = filled;
 	}
@@ -28,14 +25,11 @@ public abstract class GeometricObject {
 		this.filled = filled;
 	}
 
-	public java.util.Date getDateCreated() {
-		return dateCreated;
-	}
 
 	@Override
 	public String toString() {
-		return "created on " + dateCreated + "\ncolor: " + color +
-			" and filled: " + filled;
+		return  "\nColor: " + color +
+			"\nfilled: " + filled;
 	}
 
 	public abstract double getArea();
