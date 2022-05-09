@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Homework {
+public class Main {
     public static void main(String[] args) {
         
         // QUESTION - 1
